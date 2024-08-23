@@ -1,0 +1,255 @@
+@keyframes loaderspin {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  @keyframes loaderspin {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  @keyframes loaderpulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  @keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }
+  @keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }
+  .move-y {
+    animation: move-y 2s alternate infinite;
+    animation: move-y 2s alternate infinite;
+  }
+  @keyframes move-y {
+    0% {
+      transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 10px, 0);
+      transform: translate3d(0, 10px, 0);
+    }
+  }
+  .scale {
+    // border: 10px solid black;
+    animation-duration: 2s;
+    animation: scale 2s alternate infinite;
+    animation: scale 2s alternate infinite;
+  }
+  .scale.new {
+    animation-duration: 2.5s;
+  }
+  @keyframes scale {
+    0% {
+      transform: scale(0.9);
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1.08);
+      transform: scale(1.08);
+    }
+  }
+  .horizontal {
+    animation: horizontal 2s alternate infinite;
+    animation: horizontal 2s alternate infinite;
+  }
+  @keyframes horizontal {
+    0% {
+      transform: translateX(-20px);
+      transform: translateX(-20px);
+    }
+    0% {
+      transform: translateX(20px);
+      transform: translateX(20px);
+    }
+  }
+  .rotated-style {
+    animation: rotated-style 5s linear infinite;
+  }
+  @keyframes rotated-style {
+    0% {
+      transform: translate(0) rotate(0deg);
+      transform: translate(0) rotate(0deg);
+    }
+    25% {
+      transform: translate(-10px, 10px) rotate(10deg);
+      transform: translate(-10px, 10px) rotate(10deg);
+    }
+    50% {
+      transform: translate(5px, -5px) rotate(25deg);
+      transform: translate(5px, -5px) rotate(25deg);
+    }
+    75% {
+      transform: translate(15px, -5px) rotate(15deg);
+      transform: translate(15px, -5px) rotate(15deg);
+    }
+    100% {
+      transform: translate(0) rotate(0deg);
+      transform: translate(0) rotate(0deg);
+    }
+  }
+  .spine {
+    animation: spine 30s infinite linear;
+    animation: spine 30s infinite linear;
+  }
+  @keyframes spine {
+    0% {
+      transform: rotate(0);
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spine {
+    0% {
+      transform: rotate(0);
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .spine-r {
+    animation: spine-r 5s linear infinite;
+    animation: spine-r 5s linear infinite;
+  }
+  @keyframes spine-r {
+    0% {
+      transform: rotate(0);
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-360deg);
+      transform: rotate(-360deg);
+    }
+  }
+  @keyframes spine-r {
+    0% {
+      transform: rotate(0);
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-360deg);
+      transform: rotate(-360deg);
+    }
+  }
+  .veritcal {
+    animation-name: veritcal;
+    animation-timing-function: linear;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes veritcal {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .veritcal2 {
+    animation-name: veritcal2 3s alternate infinite;
+    animation: veritcal2 3s alternate infinite;
+  }
+  @keyframes veritcal2 {
+    0% {
+      transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+    }
+    100% {
+      transform: translate3d(0, 10px, 0);
+      transform: translate3d(0, 10px, 0);
+    }
+  }
+  .left-right {
+    animation: left-right 5s cubic-bezier(0.41, 0.04, 0.03, 1.1) infinite;
+    animation: left-right 5s cubic-bezier(0.41, 0.04, 0.03, 1.1) infinite;
+  }
+  @keyframes left-right {
+    0% {
+      transform: translatex(0);
+      transform: translatex(0);
+    }
+    50% {
+      transform: translateY(-50px);
+      transform: translatex(-50px);
+    }
+    100% {
+      transform: translatex(0);
+      transform: translatex(0);
+    }
+  }
+  @keyframes left-right {
+    0% {
+      transform: translatex(0);
+      transform: translatex(0);
+    }
+    50% {
+      transform: translatex(-50px);
+      transform: translatex(-50px);
+    }
+    100% {
+      transform: translatex(0);
+      transform: translatex(0);
+    }
+  }
+  .move-reverse {
+    animation-duration: 4s;
+    animation-name: move-reverse;
+    animation-name: move-reverse;
+    animation-iteration-count: infinite;
+  }
+  @keyframes move-reverse {
+    0% {
+      transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    25% {
+      transform: translate3d(5px, 0, 0) rotate(4deg);
+      transform: translate3d(5px, 0, 0) rotate(4deg);
+    }
+    50% {
+      transform: translate3d(0, 0, 0) rotate(-2deg);
+      transform: translate3d(0, 0, 0) rotate(-2deg);
+    }
+    75% {
+      transform: translate3d(5px, 0, 0) rotate(4deg);
+      transform: translate3d(5px, 0, 0) rotate(4deg);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }

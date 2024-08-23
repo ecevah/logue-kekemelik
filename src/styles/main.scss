@@ -1,0 +1,220 @@
+@import './animations.scss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$bg: #F3F9FE;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-color: $bg;
+  color: rgb(var(--foreground-rgb));
+}
+
+.bg-body {
+  background-color: $bg;
+}
+
+.max-w-container {
+  max-width: 85rem;
+}
+
+.swiper-slide {
+  height: auto !important;
+}
+
+.swiper-wrapper {
+  align-items: stretch !important;
+}
+
+.calendar-sidebar {
+  background-color: rgb(3, 145, 215) !important;
+  box-shadow: 5px 0 18px -3px rgb(0, 51, 76) !important;
+}
+
+.calendar-sidebar>.month-list>.calendar-months>li.active-month {
+  background-color: rgb(2, 101, 150) !important;
+}
+
+.calendar-sidebar>.month-list>.calendar-months>li:hover {
+  background-color: rgb(3, 134, 200) !important;
+}
+
+.calendar-sidebar>span#sidebarToggler {
+  background-color: rgb(3, 145, 215) !important;
+  padding: 2px 8px !important;
+  box-shadow: 5px 0 18px -3px rgb(0, 51, 76) !important;
+}
+
+th[colspan="7"]::after {
+  background-color: rgba(59, 131, 246, 0.158) !important;
+}
+
+.event-list>.event-empty {
+  padding: 15px 10px;
+  background-color: rgba(59, 131, 246, 0.158) !important;
+  border: 1px solid rgb(0, 51, 76, 0.5) !important;
+}
+
+.event-list>.event-empty>p {
+  margin: 0;
+  color: rgb(3, 134, 200) !important;
+}
+
+#eventListToggler {
+  background-color: rgb(3, 134, 200) !important;
+  box-shadow: 5px 0 18px -3px rgb(0, 51, 76) !important;
+}
+
+.event-hide+button {
+  display: none;
+}
+
+.logOutBtn {
+  visibility: hidden;
+  transition: 1s ease-in-out;
+  transform: translateY(-80%);
+}
+
+#hesabımBtn:hover+.logOutBtn,
+.logOutBtn:hover {
+  visibility: visible;
+  transform: translateY(0%);
+}
+
+#hesabımBtn {
+  z-index: 4 !important;
+}
+
+
+.pagination-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination-nav li {
+  margin: 0;
+}
+
+.pagination-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination-nav a:hover {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.pagination-nav a.active {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Ok simgesi stil düzenlemeleri */
+.pagination-nav a span {
+  display: none;
+}
+
+.pagination-nav a svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+.pagination-nav a.prev svg {
+  transform: rotate(180deg);
+}
+
+/* Sayfa numarası stil düzenlemeleri */
+.pagination-nav a:not(.active):hover {
+  color: #007bff;
+}
+
+.pagination-nav a.active {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+@media screen and (max-width: 1144px) {
+  .reservationButton {
+    width: 230px !important;
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .reservationButton {
+    width: 200px !important;
+    right: 4% !important;
+  }
+}
+
+@media screen and (max-width: 879px) {
+  .reservationButton {
+    width: 40% !important;
+    right: 5% !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .reservationButton {
+    width: 80% !important;
+    right: 10% !important;
+  }
+}
+
+@media screen and (min-width: 969px) and (max-height: 849px) {
+  #HeroImg {
+    height: 500px !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .calendar-sidebar>.calendar-year {
+    background-color: rgb(3, 134, 200) !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .calendar-sidebar>.month-list>.calendar-months {
+    background-color: rgb(3, 134, 200) !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  tr.calendar-body .calendar-day .day {
+    line-height: 20px;
+  }
+}
+
+#btnTakvim:hover,
+#btnTakvim:focus {
+  border: 2px solid rgb(76 154 255 /1);
+}
